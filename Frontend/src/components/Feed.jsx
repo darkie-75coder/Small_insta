@@ -6,7 +6,7 @@ const Feed = () => {
 
   useEffect(() => {
     async function getPosts() {
-      const res = await axios.get("http://localhost:3000/feed");
+      const res = await axios.get("https://small-insta.onrender.com/feed");
       setPosts(res.data.posts);
     }
 
