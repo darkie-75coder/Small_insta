@@ -8,6 +8,7 @@ const App = () => {
       <Routes>
         <Route path="/create-post" element={<CreatePost />} />
         <Route path="/feed" element={<Feed />} />
+        <Route path="/" element={<Feed />} />
       </Routes>
     </div>
   );
