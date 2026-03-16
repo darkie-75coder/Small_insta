@@ -12,7 +12,7 @@ const CreatePost = () => {
     formData.append("image", image);
     formData.append("caption", caption);
 
-    await axios.post("http://localhost:3000/create-post", formData);
+    await axios.post("https://small-insta.onrender.com/create-post", formData);
   }
 
   return (
