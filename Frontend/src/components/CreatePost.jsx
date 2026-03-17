@@ -1,7 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const CreatePost = () => {
+  const navigate = useNavigate();
+
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
 
@@ -12,7 +15,16 @@ const CreatePost = () => {
     formData.append("image", image);
     formData.append("caption", caption);
 
-    await axios.post("https://small-insta.onrender.com/create-post", formData);
+    navigate("/feed");
+
+    try {
+      await axios.post(
+        "https://small-insta.onrender.com/create-post",
+        formData,
+      );
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   return (
