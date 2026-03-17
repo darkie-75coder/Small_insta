@@ -56,7 +56,13 @@ button {
   padding: 20px;
   padding-bottom: 20px;
   height: 100vh;
+  text-align: center;
   gap: 2em;
+}
+
+.text-box {
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .post {
@@ -80,4 +86,27 @@ button {
   width: 100%;
   border: 2px solid white;
   border-radius: 15px;
+}
+
+.btns {
+  height: 60px;
+  width: 200px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 50px black;
+  color: #000;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
